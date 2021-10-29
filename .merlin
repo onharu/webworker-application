@@ -1,0 +1,12 @@
+####{BSB GENERATED: NO EDIT
+B lib/bs
+FLG -open YourProjectName
+FLG -ppx '/Users/onda/worker-app/node_modules/rescript/darwin/bsc.exe -as-ppx -bs-jsx 3'
+S /Users/onda/worker-app/node_modules/rescript/lib/ocaml
+B /Users/onda/worker-app/node_modules/rescript/lib/ocaml
+FLG -w +a-4-9-20-40-41-42-50-61-102
+S /Users/onda/worker-app/node_modules/@rescript/react/lib/ocaml
+B /Users/onda/worker-app/node_modules/@rescript/react/lib/ocaml
+S src
+B lib/bs/src
+####BSB GENERATED: NO EDIT}

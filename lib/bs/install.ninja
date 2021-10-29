@@ -1,0 +1,21 @@
+rescript = 1
+rule cp
+  command = cp $i $out
+rule touch
+ command = touch $out
+o App-YourProjectName.cmi : cp ../bs/src/App-YourProjectName.cmi
+o App-YourProjectName.cmj : cp ../bs/src/App-YourProjectName.cmj
+o App-YourProjectName.cmt : cp ../bs/src/App-YourProjectName.cmt
+o App.res : cp ../../src/App.res
+o index-YourProjectName.cmi : cp ../bs/src/index-YourProjectName.cmi
+o index-YourProjectName.cmj : cp ../bs/src/index-YourProjectName.cmj
+o index-YourProjectName.cmt : cp ../bs/src/index-YourProjectName.cmt
+o index.res : cp ../../src/index.res
+o mythread.worker-YourProjectName.cmi : cp ../bs/src/mythread.worker-YourProjectName.cmi
+o mythread.worker-YourProjectName.cmj : cp ../bs/src/mythread.worker-YourProjectName.cmj
+o mythread.worker-YourProjectName.cmt : cp ../bs/src/mythread.worker-YourProjectName.cmt
+o mythread.worker.res : cp ../../src/mythread.worker.res
+o YourProjectName.cmi : cp ../bs/YourProjectName.cmi
+o YourProjectName.cmj : cp ../bs/YourProjectName.cmj
+o YourProjectName.cmt : cp ../bs/YourProjectName.cmt
+build install.stamp : touch App-YourProjectName.cmi App-YourProjectName.cmj index-YourProjectName.cmi index-YourProjectName.cmj mythread.worker-YourProjectName.cmi mythread.worker-YourProjectName.cmj YourProjectName.cmi YourProjectName.cmj
